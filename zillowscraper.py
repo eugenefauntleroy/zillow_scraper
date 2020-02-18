@@ -2,8 +2,6 @@ import requests
 from bs4 import BeautifulSoup
 import csv
 
-#https://github.com/maksimKorzh/one-time-scrapers/blob/master/scrapers/zillow_scraper.py
-
 class ZillowScraper:
     results = []
 
