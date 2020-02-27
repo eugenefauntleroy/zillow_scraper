@@ -74,7 +74,8 @@ class ZillowScraper:
                 writer.writerow(row)
         
     def run(self):
-        for page in range(1, 5):
+        for page in range(1, 20):
+            #numbers indicate pages
             params = {
                 'searchQueryState': '{"pagination":{"currentPage":%s},"usersSearchTerm":"Seattle, WA","mapBounds":{"west":-122.57859829541013,"east":-122.11099270458982,"south":47.4594955013178,"north":47.766391745664386},"mapZoom":11,"regionSelection":[{"regionId":16037,"regionType":6}],"isMapVisible":false,"filterState":{"sortSelection":{"value":"globalrelevanceex"}},"isListVisible":true}' % page
             }
